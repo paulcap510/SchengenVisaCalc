@@ -1,0 +1,114 @@
+
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Overpass', sans-serif;
+    background-color: #e9f7fa;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 20px;
+}
+
+.container {
+    flex: 1; 
+    display: flex; 
+    flex-direction: column; 
+    background-color: #f9f9f9;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box; 
+}
+
+.container h1{
+    text-align: center;
+    padding-bottom: 20px
+}
+
+.date-section {
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.trips-div {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+.trips-div h2 {
+    font-size: 2rem;
+}
+
+.trips-div p {
+    margin: 5px 0; 
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px; 
+    font-size: 1.5rem;
+}
+
+.todays-date {
+    color: #0400ff; 
+    font-weight: bold; 
+}
+
+.hundred-80-days-ago {
+    color: #0400ff;
+    font-weight: bold;
+}
+
+.input-div {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#add-trip {
+    background-color: #0400ff;
+    font-family: 'Overpass', sans-serif;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; 
+    margin: 10px;
+}
+
+#add-trip:hover {
+    background-color: #03c0ff; 
+    color: #eef; 
+}
+
+#travel-form {
+    font-size: 1.25rem;
+}
+
+#travel-form h1, .container h1 {
+    font-size: 2rem;
+}
+
+#travel-form input {
+    margin: 10px;
+}
+
+#total-days {
+    font-weight: bold;
+    font-size: 2rem;
+    color: #0400ff;
+}

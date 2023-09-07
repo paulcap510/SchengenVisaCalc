@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paul's Schengen Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="flex-container">
+        <div class="container">
+            <h1>Schengen Calculator!</h1>
+            <p>Hey. Many visitors to the Schengen Area are allowed 90 days of free travel within the previous 180 day period. 
+            I've made this handy calculator to avoid overstaying your visa and keeping track of the days you can stay.
+            </p>
+            <p>Here's a friendly reminder of the countries that entered into the Schengen Agreement: <br><br>        </p>
+
+            <span class="countries">
+            Austria, Belgium, Croatia, Czech Republic, Denmark, Estonia, Finland, France, Germany, 
+            Greece, Hungary, Iceland, Italy, Latvia, Liechtenstein, Lithuania, Luxembourg, Malta,
+            Netherlands, Norway, Poland, Portugal, Slovakia, Slovenia, Spain, Sweden, Switzerland
+            </span>
+            
+            <div class="date-section">
+                <p class="date-entry">Today's Date:<br> <span class="todays-date"></span></p>
+                <p class="date-entry">180 Days Ago:<br> <span class="hundred-80-days-ago" id="hundred-80-days-ago"></span><br></p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="input-div">
+                <form id="travel-form">
+                    <h1>Add a trip</h1>
+                    <label for="entry-date">Entry Date:</label><br>
+                    <input type="date" id="entry-date" required class="date-input" onchange="updateExitMinDate(this.value)" style="font-family: 'Overpass', sans-serif;"><br>
+                    <label for="exit-date">Exit Date:</label><br>
+                    <input type="date" id="exit-date" required class="date-input" style="font-family: 'Overpass', sans-serif;"><br>
+                    <button type="button" id="add-trip" style="font-family: 'Overpass', sans-serif;">Add Trip</button><br>
+                    <p>TOTAL DAYS IN SCHENGEN ZONE:<br> <span id="total-days"></span></p><br>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="trips-div">
+        <h2>Your Trips</h2>
+    </div>
+
+    <footer class="footer">
+        &copy; 2023 Paul's Schengen Calcuator
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
